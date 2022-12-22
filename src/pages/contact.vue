@@ -1,82 +1,119 @@
 <script setup>
 import Header from "../components/layout/header.vue";
 import Footer from "../components/layout/footer.vue";
+
+const clickButton = () => {
+  console.log("clicked");
+};
 </script>
 <template>
-    
- <Header class="relative bg-blue-teal-gradient px-4 sm:px-8 lg:px-16 xl:px-40 2xl:px-64"></Header>
- <section class="min-h-screen bg-white dark:bg-gray-900">
-    <div class="container px-6 py-10 mx-auto">
-        <div class="lg:flex lg:items-center lg:-mx-10">
-            <div class="lg:w-1/2 lg:mx-10">
-                <h1 class="text-3xl font-semibold text-gray-800 capitalize dark:text-white lg:text-4xl">Let’s talk</h1>
-
-                <p class="mt-4 text-gray-500 dark:text-gray-400">
-                    Ask us everything and we would love
-                    to hear from you
-                </p>
-
-                <form class="mt-12">
-                    <div class="-mx-2 md:items-center md:flex">
-                        <div class="flex-1 px-2">
-                            <label class="block mb-2 text-sm text-gray-600 dark:text-gray-200">Full Name</label>
-                            <input type="text" placeholder="John Doe" class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
-                        </div>
-
-                        <div class="flex-1 px-2 mt-4 md:mt-0">
-                            <label class="block mb-2 text-sm text-gray-600 dark:text-gray-200">Email address</label>
-                            <input type="email" placeholder="johndoe@example.com" class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
-                        </div>
-                    </div>
-
-                    <div class="w-full mt-4">
-                        <label class="block mb-2 text-sm text-gray-600 dark:text-gray-200">Message</label>
-                        <textarea class="block w-full h-32 px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md md:h-56 dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" placeholder="Message"></textarea>
-                    </div>
-
-                    <button class="w-full px-6 py-3 mt-4 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-md hover:bg-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50">
-                        get in touch
-                    </button>
-                </form>
-            </div>
-
-            <div class="mt-12 lg:flex lg:mt-0 lg:flex-col lg:items-center lg:w-1/2 lg:mx-10">
-                <img class="hidden object-cover mx-auto rounded-full lg:block shrink-0 w-96 h-96" src="https://images.unsplash.com/photo-1598257006458-087169a1f08d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="">
-
-                <div class="mt-6 space-y-8 md:mt-8">
-                    <p class="flex items-start -mx-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mx-2 text-blue-500 dark:text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                        </svg>
-
-                        <span class="mx-2 text-gray-700 truncate w-72 dark:text-gray-400">
-                            Cecilia Chapman 711-2880 Nulla
-                            St. Mankato Mississippi 96522
-                        </span>
-                    </p>
-
-                    <p class="flex items-start -mx-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mx-2 text-blue-500 dark:text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                        </svg>
-
-                        <span class="mx-2 text-gray-700 truncate w-72 dark:text-gray-400">(257) 563-7401</span>
-                    </p>
-
-                    <p class="flex items-start -mx-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mx-2 text-blue-500 dark:text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                            <path stroke-linecap="round" stroke-linejoin="round"  d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                        </svg>
-
-                        <span class="mx-2 text-gray-700 truncate w-72 dark:text-gray-400">acb@example.com</span>
-                    </p>
-                </div>
-
-            </div>
+  <div class="h-full absolute top-0 left-0 z-0">
+    <img
+      src="../assets/images/cover-bg.jpg"
+      alt=""
+      class="w-full h-full object-cover opacity-20"
+    />
+  </div>
+  <Header
+    class="relative bg-blue-teal-gradient px-4 sm:px-8 lg:px-16 xl:px-40 2xl:px-64"
+  >
+  </Header>
+  <section class="text-gray-600 body-font relative">
+    <div class="container px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap">
+      <div
+        class="lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative"
+      >
+        <iframe
+          width="100%"
+          height="100%"
+          class="absolute inset-0"
+          frameborder="0"
+          title="map"
+          marginheight="0"
+          marginwidth="0"
+          scrolling="no"
+          src="https://maps.google.com/maps?width=100%&height=600&hl=en&q=%C4%B0zmir+(My%20Business%20Name)&ie=UTF8&t=&z=14&iwloc=B&output=embed"
+          style="filter: grayscale(1) contrast(1.2) opacity(0.4)"
+        ></iframe>
+        <div class="bg-white relative flex flex-wrap py-6 rounded shadow-md">
+          <div class="lg:w-1/2 px-6">
+            <h2
+              class="title-font font-semibold text-gray-900 tracking-widest text-xs"
+            >
+              ADDRESS
+            </h2>
+            <p class="mt-1">
+              Photo booth tattooed prism, portland taiyaki hoodie neutra
+              typewriter
+            </p>
+          </div>
+          <div class="lg:w-1/2 px-6 mt-4 lg:mt-0">
+            <h2
+              class="title-font font-semibold text-gray-900 tracking-widest text-xs"
+            >
+              EMAIL
+            </h2>
+            <a class="text-indigo-500 leading-relaxed">example@email.com</a>
+            <h2
+              class="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4"
+            >
+              PHONE
+            </h2>
+            <p class="leading-relaxed">123-456-7890</p>
+          </div>
         </div>
+      </div>
+      <div
+        class="lg:w-1/3 md:w-1/2 bg-white flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0"
+      >
+        <h2 class="text-gray-900 text-lg mb-1 font-medium title-font">
+          Feedback
+        </h2>
+        <p class="leading-relaxed mb-5 text-gray-600">
+          Post-ironic portland shabby chic echo park, banjo fashion axe
+        </p>
+        <div class="relative mb-4">
+          <label for="name" class="leading-7 text-sm text-gray-600">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+          />
+        </div>
+        <div class="relative mb-4">
+          <label for="email" class="leading-7 text-sm text-gray-600"
+            >Email</label
+          >
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+          />
+        </div>
+        <div class="relative mb-4">
+          <label for="message" class="leading-7 text-sm text-gray-600"
+            >Message</label
+          >
+          <textarea
+            id="message"
+            name="message"
+            class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+          ></textarea>
+        </div>
+        <button
+          @click="clickButton"
+          class="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"
+        >
+          Button
+        </button>
+        <p class="text-xs text-gray-500 mt-3">
+          Chicharrones blog helvetica normcore iceland tousled brook viral
+          artisan.
+        </p>
+      </div>
     </div>
-</section>
-<Footer></Footer>
- 
+  </section>
+  <Footer></Footer>
 </template>

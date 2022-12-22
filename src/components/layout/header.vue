@@ -11,6 +11,7 @@ const goTo = (name) => {
 </script>
 
 <template>
+  
   <header
     class="absolute top-0 left-0 w-full z-50 px-4 sm:px-8 lg:px-16 xl:px-40 2xl:px-64"
   >
@@ -174,7 +175,7 @@ const goTo = (name) => {
             </li>
             <li class="md:ml-4">
               <a
-                class="py-2 inline-block md:text-white md:px-2 font-semibold"
+                class="py-2 inline-block md:text-white md:px-2 font-semibold cursor-pointer"
                 @click="router.push({ name: 'Contact' })"
                 >Contact</a
               >
