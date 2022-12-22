@@ -7,11 +7,11 @@ const clickButton = () => {
 };
 </script>
 <template>
-  <div class="h-full absolute top-0 left-0 z-0">
+  <div class="max-h-full absolute top-0 left-0 z-0">
     <img
       src="../assets/images/cover-bg.jpg"
       alt=""
-      class="w-full h-full object-cover opacity-20"
+      class="w-full h-full object-cover opacity-10"
     />
   </div>
   <Header
@@ -64,7 +64,7 @@ const clickButton = () => {
         </div>
       </div>
       <div
-        class="lg:w-1/3 md:w-1/2 bg-white flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0"
+        class="lg:w-1/3 md:w-1/2 bg-blue-teal relative border-spacing-10 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0"
       >
         <h2 class="text-gray-900 text-lg mb-1 font-medium title-font">
           Feedback

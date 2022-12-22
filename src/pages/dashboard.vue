@@ -21,7 +21,7 @@ const router = useRouter();
         <section
           class="cover bg-blue-teal-gradient relative bg-blue-600 px-4 sm:px-8 lg:px-16 xl:px-40 2xl:px-64 overflow-hidden py-48 flex items-center min-h-screen"
         >
-          <div class="h-full absolute top-0 left-0 z-0">
+          <div class="max-h-full absolute top-0 left-0 z-0">
             <img
               src="../assets/images/cover-bg.jpg"
               alt=""

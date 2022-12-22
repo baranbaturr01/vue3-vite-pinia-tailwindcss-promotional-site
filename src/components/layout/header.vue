@@ -11,7 +11,6 @@ const goTo = (name) => {
 </script>
 
 <template>
-  
   <header
     class="absolute top-0 left-0 w-full z-50 px-4 sm:px-8 lg:px-16 xl:px-40 2xl:px-64"
   >
