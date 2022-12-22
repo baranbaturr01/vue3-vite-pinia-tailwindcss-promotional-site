@@ -23,7 +23,7 @@ const router = useRouter();
         >
           <div class="h-full absolute top-0 left-0 z-0">
             <img
-              src="images/cover-bg.jpg"
+              src="../assets/images/cover-bg.jpg"
               alt=""
               class="w-full h-full object-cover opacity-20"
             />
