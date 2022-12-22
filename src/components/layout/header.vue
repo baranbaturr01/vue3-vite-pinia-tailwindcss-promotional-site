@@ -1,5 +1,8 @@
 <script setup>
 import { useRouter } from "vue-router";
+import ServicesDropdown from "../dropdown/servicesDropdown.vue";
+import AdsDropdown from "../dropdown/adsDropdown.vue";
+
 const router = useRouter();
 
 const goTo = (name) => {
@@ -161,32 +164,19 @@ const goTo = (name) => {
                 >Hakkımızda</a
               >
             </li>
+            <!-- Services -->
             <li class="md:ml-4">
-              <a
-                class="py-2 inline-block md:text-white md:px-2 font-semibold"
-                href="#"
-                >Tedaviler</a
-              >
+              <ServicesDropdown></ServicesDropdown>
             </li>
+            <!-- Ads -->
             <li class="md:ml-4">
-              <a
-                class="py-2 inline-block md:text-white md:px-2 font-semibold"
-                href="#"
-                >Görüşler</a
-              >
-            </li>
-            <li class="md:ml-4 md:hidden lg:block">
-              <a
-                class="py-2 inline-block md:text-white md:px-2 font-semibold"
-                href="#"
-                >Blog</a
-              >
+              <AdsDropdown></AdsDropdown>
             </li>
             <li class="md:ml-4">
               <a
                 class="py-2 inline-block md:text-white md:px-2 font-semibold"
                 @click="router.push({ name: 'Contact' })"
-                >İletişim</a
+                >Contact</a
               >
             </li>
           </ul>
