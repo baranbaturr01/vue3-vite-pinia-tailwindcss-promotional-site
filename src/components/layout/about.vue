@@ -61,7 +61,7 @@
           <div class="md:w-1/2 md:px-4 lg:w-1/4">
             <div class="bg-white rounded-lg border border-gray-300 p-8">
               <img
-                src="images/teeth-whitening.svg"
+                src="../../assets/images/teeth-whitening.svg"
                 alt=""
                 class="h-20 mx-auto"
               />
@@ -74,7 +74,7 @@
 
           <div class="md:w-1/2 md:px-4 mt-4 md:mt-0 lg:w-1/4">
             <div class="bg-white rounded-lg border border-gray-300 p-8">
-              <img src="images/oral-surgery.svg" alt="" class="h-20 mx-auto" />
+              <img src="../../assets/images/oral-surgery.svg" alt="" class="h-20 mx-auto" />
 
               <h4 class="text-xl font-bold mt-4">Oral Surgery</h4>
               <p class="mt-1">Let us show you how our experience.</p>
@@ -85,7 +85,7 @@
           <div class="md:w-1/2 md:px-4 mt-4 md:mt-8 lg:mt-0 lg:w-1/4">
             <div class="bg-white rounded-lg border border-gray-300 p-8">
               <img
-                src="images/painless-dentistry.svg"
+                src="../../assets/images/painless-dentistry.svg"
                 alt=""
                 class="h-20 mx-auto"
               />
@@ -98,7 +98,7 @@
 
           <div class="md:w-1/2 md:px-4 mt-4 md:mt-8 lg:mt-0 lg:w-1/4">
             <div class="bg-white rounded-lg border border-gray-300 p-8">
-              <img src="images/periodontics.svg" alt="" class="h-20 mx-auto" />
+              <img src="../../assets/images/periodontics.svg" alt="" class="h-20 mx-auto" />
 
               <h4 class="text-xl font-bold mt-4">Periodontics</h4>
               <p class="mt-1">Let us show you how our experience.</p>
